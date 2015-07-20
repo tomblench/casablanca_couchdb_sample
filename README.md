@@ -7,9 +7,9 @@ _Producer/consumer bulk upload to CouchDB using Microsoft Casablanca REST librar
 _Pre-requisites_
 
 - a C++11 compiler
-- boost[http://www.boost.org]
-- Casablanca[https://casablanca.codeplex.com]
-- a copy of CouchDB[http://couchdb.apache.org] running somewhere
+- [boost](http://www.boost.org)
+- [Casablanca](https://casablanca.codeplex.com)
+- a copy of [CouchDB](http://couchdb.apache.org) running somewhere
 
 _Building_
 
