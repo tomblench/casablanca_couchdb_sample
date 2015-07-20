@@ -1,7 +1,25 @@
 # C++ Casablanca CouchDB Sample
+
 _Producer/consumer bulk upload to CouchDB using Microsoft Casablanca REST library and Boost_
 
-The sample shows:
+# Build and run
+
+_Pre-requisites_
+
+- a C++11 compiler
+- boost[http://www.boost.org]
+- Casablanca[https://casablanca.codeplex.com]
+- a copy of CouchDB[http://couchdb.apache.org] running somewhere
+
+_Building_
+
+This will depend on platform, but on the Mac it looks something like
+```
+clang++ casablanca_couchdb_sample.cpp -std=c++11 -I$CASABLANCA_DIR/Release/include/ -lcpprest -L$CASABLANCA_DIR/build.release/Binaries/ -lboost_thread-mt -lboost_system -lboost_chrono -lboost_program_options
+```
+
+_The sample shows:_
+
 - Creating JSON documents using Casablanca
 - Making REST API calls using Casablanca
 - Using boost threading primitives to create and upload batches of documents using a producer/consumer pattern and a shared queue
@@ -20,7 +38,8 @@ took 10.9801 seconds
 rate 9107.36docs / second
 ```
 
-_Issues_:
+# Issues
+
 - If the number of documents is not exactly divisible by the batch size, the remainder do not get uploaded (!)
 - Database URL is hard-coded
 - Database is not deleted/created as part of the test run
