@@ -35,7 +35,7 @@ consumed 100000 objects.
 batch size was 1000 objects.
 took 10.9801 seconds
 
-rate 9107.36docs / second
+rate 9107.36 docs / second
 ```
 
 # Issues
