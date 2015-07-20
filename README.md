@@ -21,5 +21,6 @@ rate 9107.36docs / second
 ```
 
 _Issues_:
+- If the number of documents is not exactly divisible by the batch size, the remainder do not get uploaded (!)
 - Database URL is hard-coded
 - Database is not deleted/created as part of the test run
